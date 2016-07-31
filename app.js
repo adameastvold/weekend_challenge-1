@@ -1,11 +1,14 @@
 $(document).ready(function(){
 
+  var monthlyAmount = 0;
+  var totalMonthly = 0;
+
   $('#employeeinfo').on('submit', function(){
       event.preventDefault();
 
       var employee = {};
-      var monthlyAmount = 0;
-      var totalMonthly = 0;
+      // var monthlyAmount = 0;
+      // var totalMonthly = 0;
       var fields = $('#employeeinfo').serializeArray(); //DO NOT TOUCH
 
       fields.forEach(function(element, index, array){
@@ -36,6 +39,10 @@ $(document).ready(function(){
 
 
 
+        monthlyAmount = parseInt(employee.employeeSalary) / 12;
+        totalMonthly = totalMonthly + monthlyAmount;
+
+
         // monthlyAmount = (employee.employeeSalary) / 12;
 
         // $('.monthlyRate').each(function(){
@@ -44,7 +51,7 @@ $(document).ready(function(){
         //   console.log(typeof totalMonthly);     //Close to success?????
         // });
 
-
+        $('.monthlyRate').empty();
         $('#counter').append('<p class="monthlyRate">$' + totalMonthly + ' per Month</p>');
 
 
