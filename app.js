@@ -28,7 +28,7 @@ $(document).ready(function() {
 
 
             employee.employeeSalary = parseInt(employee.employeeSalary); //change type to number
-            console.log(typeof employee.employeeSalary);
+            // console.log(typeof employee.employeeSalary);
 
 
 
@@ -48,7 +48,7 @@ $(document).ready(function() {
         }
 
         $('.information').click(function() {
-            console.log('what');
+            // console.log('what');
             $(this).remove('.information');
         });
 
