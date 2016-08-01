@@ -4,9 +4,8 @@
 }*/
 
 h1 {
-  text-align: center;
+    text-align: center;
 }
-
 label {
     display: inline-block;
     float: left;
@@ -18,10 +17,9 @@ label {
     border: none;
 }
 input {
-  display: inline-block;
-  float: left;
+    display: inline-block;
+    float: left;
 }
-
 input[type=text] {
     width: 30%;
     padding: 12px 20px;
@@ -30,7 +28,6 @@ input[type=text] {
     border: 2px solid #4CAF50;
     border-radius: 6px;
 }
-
 input[type=button], input[type=submit], input[type=reset] {
     display: inline-block;
     background-color: #4CAF50;
@@ -43,35 +40,29 @@ input[type=button], input[type=submit], input[type=reset] {
     border-radius: 6px;
 }
 
-
 /* CONTAINER */
 
 #container {
-  display: block;
-  text-align: center;
-  margin-top: 20px;
-  margin-left: 490px;
-  border: 2px solid #4CAF50;
-  width: 30%;
-  border-radius: 6px;
-
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 490px;
+    border: 2px solid #4CAF50;
+    width: 30%;
+    border-radius: 6px;
 }
-
 #counter {
-  display: block;
-  text-align: center;
-  margin-top: 280px;
-  margin-left: 490px;
-  width: 30%;
-  border: 2px solid #4CAF50;
-  border-radius: 6px;
-
+    display: block;
+    text-align: center;
+    margin-top: 280px;
+    margin-left: 490px;
+    width: 30%;
+    border: 2px solid #4CAF50;
+    border-radius: 6px;
 }
-
-h2{
-  margin-left: 5px;
+h2 {
+    margin-left: 5px;
 }
-
 p {
-  margin-left: 5px;
+    margin-left: 5px;
 }
