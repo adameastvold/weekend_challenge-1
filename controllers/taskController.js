@@ -44,14 +44,14 @@ myApp.controller("taskController", ["$scope", function($scope) {
 
                     $scope.tempArray = $scope.employeeArray;
 
-  console.log('this is what needs to get sliced:', $scope.tempArray[i]);
-  $scope.tempArray.slice(i, 1);
-  console.log('this is what the slice slices:', $scope.tempArray.slice(i, 0));
-  $scope.employeeArray = $scope.tempArray;
-  console.log('this is after slice:', $scope.employeeArray);
+                    console.log('this is what needs to get sliced:', $scope.tempArray[i]);
+                    $scope.tempArray.splice(i, 1);
+                    console.log('this is what the slice slices:', $scope.tempArray.splice(i, 0));
+                    $scope.employeeArray = $scope.tempArray;
+                    console.log('this is after slice:', $scope.employeeArray);
                     //create temporary array, get rid of object, push new array into old array, which is now blank
                     //or
-                    //TRY SPLICE
+                    //TRY SPLICE?
                 };
             });
         };
