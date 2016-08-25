@@ -35,10 +35,9 @@ myApp.controller("taskController", ["$scope", function($scope) {
                 console.log(employee);
                 if (employee.ID == id) {
 
-                    monthlyAmount = $scope.employeeInfo.salary / 12;
-                    $scope.totalMonthly = $scope.totalMonthly - monthlyAmount;
+                    var tempEmpMonthly = employee.salary / 12;
+                    $scope.totalMonthly -= tempEmpMonthly;
                     console.log($scope.totalMonthly);
-
 
 
 
