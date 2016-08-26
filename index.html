@@ -49,14 +49,14 @@
     <div id='counter'>
         <h2>Monthly Cost:</h2>
         <p class='monthlyRate'>
-        {{totalMonthly}}
+        {{totalMonthly | currency}}
         </p>
     </div>
 
     <div id="container">
         <h2>Employee Information:</h2>
         <p class='monthlyRate' ng-repeat="employee in employeeArray">
-          <span>{{employee.firstName + ' ' + employee.lastName}} | {{employee.ID}} | {{employee.title}} | {{employee.salary}}
+          <span>{{employee.firstName + ' ' + employee.lastName}} | {{employee.ID}} | {{employee.title}} | {{employee.salary | currency}}
           <button ng-click="deleteEmployee(employee.ID)" id="delete">Delete</button></span>
         </p>
     </div>

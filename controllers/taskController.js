@@ -11,6 +11,10 @@ myApp.controller("taskController", ["$scope", function($scope) {
 
     $scope.submitEmployee = function() {
 
+        if ($scope.employeeInfo.ID == '') {
+            alert('please enter employee ID');
+        };
+
         $scope.employeeInfo.salary = $scope.employeeInfo.salary * 1;
 
         monthlyAmount = $scope.employeeInfo.salary / 12;
